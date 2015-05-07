@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+    @property (nonatomic) IBOutlet UIView *lameView1;
+    @property (nonatomic) IBOutlet UIView *lameView2;
 
 @end
 

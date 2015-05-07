@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <KandySDK/KandySDK.h>
+
 
 @interface AppDelegate ()
 
@@ -15,8 +17,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [Kandy initializeSDKWithDomainKey:@"DAKbc28ee8581b749a1be89f30f6a0f03b1" domainSecret:@"DAS5d712ae1a0034a8ab3399b980eb1e990"];
     return YES;
 }
 
